@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "build-github-page": "vite build --base=/vite-todo"
   },
   "dependencies": {
     "vue": "^3.2.16"
