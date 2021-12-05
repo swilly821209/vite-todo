@@ -6,9 +6,10 @@
         :class="{ 'font-bold': locale === 'en' }"
         @click="locale = 'en'"
       >
-        English</button
-      ><span>|</span
-      ><button
+        English
+      </button>
+      <span>|</span>
+      <button
         class="focus:outline-none"
         :class="{ 'font-bold': locale === 'zhHant' }"
         @click="locale = 'zhHant'"
