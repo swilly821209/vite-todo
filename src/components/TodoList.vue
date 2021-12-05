@@ -16,6 +16,14 @@
       >
         繁體中文
       </button>
+      <span>|</span>
+      <button
+        class="focus:outline-none"
+        :class="{ 'font-bold': locale === 'ja' }"
+        @click="locale = 'ja'"
+      >
+        日文
+      </button>
     </div>
     <h1 class="text-5xl font-bold">{{ t('to-do-list-on-vue-js') }}</h1>
     <p class="text-2xl font-bold">
