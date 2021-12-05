@@ -5,6 +5,9 @@ import windicss from 'windicss'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  build: {
+    outDir: 'docs'
+  },
   plugins: [
     vue(),
     WindiCSS(),
