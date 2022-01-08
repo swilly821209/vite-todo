@@ -1,6 +1,6 @@
 describe('測試修改代辦事項功能', () => {
   it('找到代辦事項的修改按鈕並點擊', () => {
-    cy.checkUrl()
+    // cy.checkUrl()
     cy.get('button').last().click()
   })
   it('找到要修改的代辦事項', () => {

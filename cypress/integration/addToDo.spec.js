@@ -4,7 +4,7 @@ describe('測試新增代辦事項功能', () => {
   it('訪問測試網址', () => {
     // cy.visit('/').url().should('eq', 'http://localhost:3000/')
     cy.visit('/')
-    cy.checkUrl()
+    // cy.checkUrl()
   })
   it('找到輸入代辦事項的輸入框', () => {
     cy.get('#textInput').as('typeToDoInput')

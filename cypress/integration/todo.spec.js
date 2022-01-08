@@ -1,6 +1,6 @@
 describe('Test todo list', () => {
   it('Add item', () => {
-    cy.visit('/').checkUrl()
+    cy.visit('/')
     cy.viewport(325, 500)
     cy.wait(3000)
     cy.viewport(1000, 800)
