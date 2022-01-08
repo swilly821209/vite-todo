@@ -7,7 +7,6 @@
   publish = "docs/"
   command = "npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build"
 
-# cypress
 [[plugins]]
   package = "netlify-plugin-cypress"
   [plugins.inputs]
