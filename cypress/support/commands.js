@@ -23,6 +23,9 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-Cypress.Commands.add('checkUrl', () => { 
-  cy.url().should('eq', 'http://localhost:3000/')
+// Cypress.Commands.add('checkUrl', () => { 
+//   cy.url().should('eq', 'http://localhost:3000/')
+//  })
+Cypress.Commands.add('getItemInput', () => { 
+  cy.get('.todo-item__input').last()
  })
