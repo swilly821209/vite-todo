@@ -29,8 +29,7 @@
 <script setup lang="ts">
 import { ref, onBeforeUpdate } from 'vue';
 import { useI18n } from 'vue-i18n';
-import I18n from './I18n.vue';
-import VButton from './VButton.vue';
+
 const { t } = useI18n();
 
 let task = ref('');
