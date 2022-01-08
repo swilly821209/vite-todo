@@ -5,9 +5,9 @@ import TodoList from './components/TodoList.vue'
 </script>
 
 <template>
-<div class="flex justify-center items-center h-screen">
-<TodoList></TodoList>
-</div>
+  <div class="flex justify-center items-center h-screen">
+    <TodoList></TodoList>
+  </div>
 </template>
 
 <style>

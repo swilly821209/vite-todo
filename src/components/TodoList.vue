@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col justify-center items-center text-gray-800">
-    <I18n />    
+    <I18n />
     <h1 class="text-5xl font-bold">{{ t('to-do-list-on-vue-js') }}</h1>
     <p class="text-2xl font-bold">{{ t('you-have-tasks-length-tasks', [tasks.length]) }}</p>
     <div class="w-400px">
@@ -27,35 +27,35 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onBeforeUpdate } from 'vue';
-import { useI18n } from 'vue-i18n';
+import { ref, onBeforeUpdate } from 'vue'
+import { useI18n } from 'vue-i18n'
 
-const { t } = useI18n();
+const { t } = useI18n()
 
-let task = ref('');
-let tasks = ref(['HTML5', 'CSS3', 'JavaScript']);
-let taskInput = [];
+let task = ref('')
+let tasks = ref(['HTML5', 'CSS3', 'JavaScript'])
+let taskInput = []
 
 onBeforeUpdate(() => {
-  taskInput = [];
-});
+  taskInput = []
+})
 
 function setTaskInput(el) {
   if (el) {
-    taskInput.push(el);
+    taskInput.push(el)
   }
 }
 
 function addTask(value) {
-  tasks.value.push(value);
-  task.value = '';
+  tasks.value.push(value)
+  task.value = ''
 }
 
 function deleteTask(index) {
-  tasks.value.splice(index, 1);
+  tasks.value.splice(index, 1)
 }
 
 function editTask(index) {
-  taskInput[index].focus();
+  taskInput[index].focus()
 }
 </script>
