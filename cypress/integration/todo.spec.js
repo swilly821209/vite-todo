@@ -1,7 +1,9 @@
 describe('Test todo list', () => {
   it('Add item', () => {
-    cy.visit('/')
+    cy.visit('/').checkUrl()
     cy.viewport(325, 500)
+    cy.wait(3000)
+    cy.viewport(1000, 800)
     cy.get('#textInput').clear()
     cy.fixture('example').then((item) => {
       cy.get('#textInput').type(`${item.todo}{enter}`, { delay: 500 })
