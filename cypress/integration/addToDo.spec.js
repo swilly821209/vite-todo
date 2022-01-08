@@ -7,7 +7,7 @@ describe('測試新增代辦事項功能', () => {
     cy.checkUrl()
   })
   it('找到輸入代辦事項的輸入框', () => {
-    cy.get('#input').as('typeToDoInput')
+    cy.get('#textInput').as('typeToDoInput')
     cy.get('@typeToDoInput').clear()
     cy.fixture('example').then((item) => {
       cy.get('@typeToDoInput').type(`${item.todo}{enter}`, {delay: 100})

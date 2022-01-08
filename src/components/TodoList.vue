@@ -23,7 +23,7 @@
     </p>
     <div class="w-400px">
       <input
-        id="input"
+        id="textInput"
         v-model="task"
         type="text"
         class="
@@ -48,6 +48,7 @@
           v-model="tasks[index]"
           type="text"
           class="
+            todo-item__input
             flex-1
             pl-2
             border-2 border-transparent
@@ -56,6 +57,7 @@
         />
         <button
           class="
+            btn-delete
             px-2
             border-2 border-gray-800
             bg-orange-50
